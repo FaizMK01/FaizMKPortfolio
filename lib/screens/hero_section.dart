@@ -302,8 +302,8 @@ class _HeroSectionState extends State<HeroSection> {
 
   Widget _buildStatsRow({required bool isCentered}) {
     final stats = [
-      {'val': '1+', 'label': 'Years Exp'},
-      {'val': '50+', 'label': 'Completed Apps'},
+      {'val': '2+', 'label': 'Years Exp'},
+      {'val': '30+', 'label': 'Completed Apps'},
       {'val': '100%', 'label': 'On-Time Delivery'},
     ];
 

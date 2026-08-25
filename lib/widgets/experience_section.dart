@@ -41,7 +41,7 @@ class ExperienceSection extends StatelessWidget {
       company: 'Codex Dev',
       location: 'Peshawar, onsite',
       role: 'Flutter Developer',
-      date: 'Jan 2025 - Mar 2025',
+      date: 'Jan 2025 - June 2025',
       color: Color(0xFF0EA5E9), // Cyan
       responsibilities: [
         'Built and enhanced Sales Reports, Product Management, and Payment modules using BLoC state management for clean architecture.',
@@ -54,7 +54,7 @@ class ExperienceSection extends StatelessWidget {
       company: 'Synergistic Tech Solutions',
       location: 'Mardan, onsite',
       role: 'Flutter Developer Intern',
-      date: 'June 2024 - Sep 2024',
+      date: 'June 2024 - Dec 2024',
       color: Color(0xFF8B5CF6), // Purple
       responsibilities: [
         'Built a Flutter Notes App with Firebase Auth, Firestore for storage, and Firebase Storage for image management.',
@@ -241,10 +241,7 @@ class _TimelineItemRowState extends State<TimelineItemRow> {
                           ),
                         ),
                       ),
-                      ExperienceCard(
-                        item: widget.item,
-                        isHovered: _isHovered,
-                      ),
+                      ExperienceCard(item: widget.item, isHovered: _isHovered),
                     ],
                   ),
                 ),
@@ -299,7 +296,9 @@ class TimelineNode extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: isHovered ? color : Colors.white.withValues(alpha: 0.25),
                 border: Border.all(
-                  color: isHovered ? Colors.white : color.withValues(alpha: 0.5),
+                  color: isHovered
+                      ? Colors.white
+                      : color.withValues(alpha: 0.5),
                   width: isHovered ? 3 : 2,
                 ),
                 boxShadow: [

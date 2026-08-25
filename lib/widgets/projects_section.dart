@@ -46,6 +46,8 @@ class ProjectsSection extends StatelessWidget {
       subtitle: 'AI-Powered Study Planner & Tutor',
       icon: FontAwesomeIcons.graduationCap,
       primaryColor: Color(0xFF8B5CF6), // Purple
+      link:
+          'https://play.google.com/store/apps/details?id=com.devorastudios.studycoach',
       tech: ['Flutter', 'BLoC', 'Hive', 'Gemini API', 'Groq API'],
       bullets: [
         'Built a cross-platform Flutter app with BLoC and glassmorphic UI for clean, scalable architecture.',
